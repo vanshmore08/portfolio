@@ -1,0 +1,239 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; /* 🔥 UNDERLINE REMOVE */
+}
+
+body {
+  font-family: Poppins;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e2e8f0;
+  cursor: crosshair;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  color: cyan;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-size: 18px;
+}
+
+nav a {
+  margin: 10px;
+  padding: 8px 18px;
+  border-radius: 25px;
+  color: #cbd5f5;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: linear-gradient(45deg, cyan, blue);
+  color: black;
+  box-shadow: 0 0 10px cyan;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* 🔥 PERFECT CIRCLE IMAGE */
+.profile {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  box-shadow: 0 0 25px cyan;
+  transition: 0.4s;
+}
+
+.profile:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT STYLE */
+h1 {
+  font-size: 32px;
+  background: linear-gradient(to right, cyan, white);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  color: #94a3b8;
+}
+
+/* BUTTONS */
+.btn {
+  background: linear-gradient(45deg, cyan, blue);
+  color: black;
+  padding: 12px 22px;
+  border-radius: 30px;
+  margin: 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px cyan;
+}
+
+.outline {
+  border: 2px solid cyan;
+  background: transparent;
+  color: cyan;
+}
+
+.outline:hover {
+  background: cyan;
+  color: black;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* SKILLS */
+.skills-grid span {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skills-grid span:hover {
+  background: cyan;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* PROJECTS */
+.project-card {
+  margin: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px cyan;
+}
+/* glow border effect */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(45deg, cyan, blue, purple);
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* 🔥 FIX PROJECT IMAGE SIZE */
+.project-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;   /* 🔥 CIRCLE */
+  border: 3px solid cyan;
+  box-shadow: 0 0 20px cyan;
+  margin: 20px auto;    /* center */
+  display: block;
+}
+
+/* BUTTONS */
+.btns {
+  margin-top: 20px;   /* 🔥 spacing fix */
+}
+
+.btns a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 18px;
+  background: linear-gradient(45deg, cyan, blue);
+  color: black;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btns a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px cyan;
+}
+
+/* COMING TEXT */
+.coming {
+  color: orange;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.5; }
+}
+
+/* SOCIALS */
+.socials {
+  margin-top: 25px;   /* 🔥 niche le aaya */
+}
+
+.socials a {
+  display: inline-block;
+  margin: 10px;
+  padding:10px 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  transition:0.3s;
+}
+
+.socials a:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 10px cyan;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
